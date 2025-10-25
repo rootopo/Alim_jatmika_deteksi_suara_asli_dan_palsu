@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 @st.cache_resource
 def load_model():
     try:
-        return tf.keras.models.load_model(r"D:\streamlite2\Model_Alim.h5")
+        return tf.keras.models.load_model(r"Model_Alim.h5")
     except Exception as e:
         st.error(f"Gagal memuat model: {e}")
         return None
@@ -126,4 +126,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
